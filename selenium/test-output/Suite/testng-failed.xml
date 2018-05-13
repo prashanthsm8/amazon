@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="guru99.listner_demo"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <exclude name="sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="guru99.banking">
+        <methods>
+          <include name="Beftest"/>
+          <include name="aft"/>
+          <include name="test3" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- guru99.banking -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+       <listener class-name="guru99.listner_demo"/>
+  	</listeners>
+  	
+  <test thread-count="5" name="Test">
+   
+  	<groups>
+  		<run>
+  			<exclude name="sanity"></exclude>
+  		</run>
+  	</groups>
+  	
+  
+  	
+    <classes>
+      <class name="guru99.banking"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
